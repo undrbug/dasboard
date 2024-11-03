@@ -1,17 +1,15 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import './Sidebar.css';
 const Sidebar = () => {
     return (
         <div>
-            {/* hacer un sidebar moderno */}
             <div className="sidebar">
-                <h2>Dashboard</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                <nav>
+                    <Link to="#" className='link'>Home</Link>
+                    <Link to="#" className='link'>Ususarios</Link>
+                    <Link to="#" className='link'>Productos</Link>
+                </nav>
             </div>
 
         </div>
