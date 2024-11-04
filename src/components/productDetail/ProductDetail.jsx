@@ -11,20 +11,20 @@ const ProductDetail = () => {
     if (error) return;
 
     return (
-        <div className="product-card">
-            <div className="product-card-header">
+        <div className="product-detail-card">
+            <div className="product-detail-header">
                 <h3>{product.name}</h3>
                 <p className="product-brand">{product.brand}</p>
             </div>
-            <div className="product-card-body">
-                <div className="image">
+            <div className="product-detail-body">
+                <div className="product-image">
                     <img src={`${URL_BASE_IMG}${product.Image}`} alt={product.name} />
                 </div>
                 <p className="product-description">{product.drink_description}</p>
-                <p>Tipo: <span>{product.drink_type}</span></p>
-                <p>Presentación: <span>{product.Presentation} ml</span></p>
-                <p>Precio: <span>${product.price}</span></p>
-                <p>Stock: <span>{product.Stock}</span></p>
+                <p className="product-type">Tipo: <span>{product.drink_type}</span></p>
+                <p className="product-presentation">Presentación: <span>{product.Presentation} ml</span></p>
+                <p className="product-price">Precio: <span>${product.price}</span></p>
+                <p className="product-stock">Stock: <span>{product.Stock} unidades</span></p>
             </div>
         </div>
     );
