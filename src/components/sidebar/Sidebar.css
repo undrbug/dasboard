@@ -1,5 +1,3 @@
-/* mostrar el sidebar al costado izquierdo de la pagina */
-
 .sidebar {
   height: 100%;
   width: auto;
@@ -25,4 +23,8 @@ h4 {
   font-size: 20px;
   margin: 0;
   padding: 10px 15px;
+}
+
+.active {
+  color: yellow;
 }

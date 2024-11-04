@@ -22,3 +22,7 @@ header {
 .navbar__link:hover {
   color: yellow;
 }
+
+.active {
+  color: yellow;
+}
