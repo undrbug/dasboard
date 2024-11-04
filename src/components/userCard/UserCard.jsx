@@ -9,7 +9,7 @@ const UserCard = ({ user }) => (
     </div>
     <div className="user-card-body">
       <p>Email: <span>{user.email}</span></p>
-      <Link to={user.detail} target='_blank'>Detalles</Link>
+      <Link to={`/usuario/${user.id}`}>Detalles</Link>
     </div>
   </div>
 );

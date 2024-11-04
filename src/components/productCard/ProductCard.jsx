@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => (
     <div className="product-card-body">
       <p>Descripcion: <span>{product.drink_description}</span></p>
       <p>Precio: <span>{product.price}</span></p>
-      <Link to={product.detail} target='_blank'>Detalles</Link>
+      <Link to={`/producto/${product.id}`}>Detalles</Link>
     </div>
   </div>
 
