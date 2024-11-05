@@ -4,6 +4,7 @@ import ProductDashboard from '../pages/productDashboard/ProductDashboard';
 import UserDashboard from '../pages/userDashboard/UserDashboard';
 import ProductDetail from '../components/productDetail/ProductDetail';
 import UserDetail from '../components/userDetail/UserDetail';
+import InfoPanel from '../pages/infoPanel/InfoPanel';
 
 const router = createBrowserRouter([
     {
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
         element: <Root />,
         errorElement: <h1>404 Not Found</h1>,
         children: [
+            {
+                path: "/info",
+                element: <InfoPanel />,
+            },
             {
                 path: "/usuarios",
                 element: <UserDashboard />,
