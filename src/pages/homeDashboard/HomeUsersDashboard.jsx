@@ -24,6 +24,7 @@ const HomeUserDashboard = () => {
                     <p>Administradores: <span>{users.admins}</span></p>
                     <p>Activos: <span>{users.active}</span></p>
                     <p>Verificados: <span>{users.verified}</span></p>
+                    <p>No verificados: <span>{users.count -users.verified}</span></p>
                 </div>
             </div>
 

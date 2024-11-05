@@ -6,10 +6,12 @@ import './InfoPanel.css';
 const InfoPanel = () => {
     return (
         <>
-        <div className='info-panel-container'>
-            <HomeUsersDashboard />
-            <HomeProductsDashboard />
-        </div>
+            <div className='info-panel-container'>
+                <HomeUsersDashboard />
+            </div>
+            <div className='info-panel-container'>
+                <HomeProductsDashboard />
+            </div>
         </>
     );
 }
