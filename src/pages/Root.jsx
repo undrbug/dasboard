@@ -8,7 +8,9 @@ const Root = () => {
   return (
     <div>
       <Navbar />
-      <Sidebar />
+      {/* <Sidebar /> */}
+
+      
       <Outlet />
 
       <footer>Proximamente el footer</footer>
