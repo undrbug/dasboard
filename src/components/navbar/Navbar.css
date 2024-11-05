@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #494949;
+  color: white;
+  padding: 3rem;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.navbar__link {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+
+}
+
+.navbar__link:hover {
+  color: yellow;
+}
+
+.active {
+  color: yellow;
+}
