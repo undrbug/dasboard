@@ -2,9 +2,13 @@ import { useParams } from "react-router-dom";
 import useFetch from '../../hooks/useFetch';
 import { URL_BASE_IMG } from "../../hooks/useFetch";
 import './ProductDetail.css';
+import {useNavigate} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const ProductDetail = () => {
     const { id } = useParams();
+
+    const navigate = useNavigate();
 
     const { data: product, loading, error } = useFetch(`/products/${id}`);
     if (loading) return <p>Loading product...</p>;
@@ -25,6 +29,8 @@ const ProductDetail = () => {
                 <p className="product-presentation">Presentación: <span>{product.Presentation} ml</span></p>
                 <p className="product-price">Precio: <span>${product.price}</span></p>
                 <p className="product-stock">Stock: <span>{product.Stock} unidades</span></p>
+
+                <Link to={``} onClick={() => navigate(-1)} className="btn-link">Volver</Link>
             </div>
         </div>
     );

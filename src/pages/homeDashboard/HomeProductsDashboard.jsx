@@ -13,9 +13,25 @@ const HomeProductsDashboard = () => {
         <>
             <div className="title">
                 <h2>Informacion sobre productos</h2>
-                <ProductsTotal products={products} />
-                <ProductsStock products={products} />
-                <ProductsLastAdded products={products} />
+            </div>
+            <div className="dashboard-container">
+                <div className="dashboard-panel">
+                    <ProductsTotal products={products} />
+
+                </div>
+            </div>
+
+            <div className="dashboard-container">
+                <div className="dashboard-panel">
+                    <ProductsStock products={products} />
+                </div>
+            </div>
+
+            <div className="dashboard-container">
+                <div className="dashboard-panel">
+                    <ProductsLastAdded products={products} />
+
+                </div>
             </div>
 
         </>

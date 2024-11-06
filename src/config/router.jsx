@@ -5,6 +5,7 @@ import UserDashboard from '../pages/userDashboard/UserDashboard';
 import ProductDetail from '../components/productDetail/ProductDetail';
 import UserDetail from '../components/userDetail/UserDetail';
 import InfoPanel from '../pages/infoPanel/InfoPanel';
+import Graphics from '../components/graphics/Graphics';
 
 const router = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
                 path: "/producto/:id",
                 element: <ProductDetail />,
             },
+            {
+                path: "/graficos",
+                element: <Graphics />,
+            }
         ]
     }
 ]);
